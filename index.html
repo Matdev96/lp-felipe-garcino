@@ -184,7 +184,8 @@ h2{font-weight:900;font-stretch:82%;font-size:clamp(1.9rem,4.5vw,3rem);line-heig
 footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-weight:300;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--grey)}
 
 @media (max-width:860px){
-  section.wrap.hero{grid-template-columns:1fr;padding-top:clamp(1.5rem,5vw,5rem)}
+  header{padding:22px 0 12px}
+  section.wrap.hero{grid-template-columns:1fr;padding-top:.75rem}
   .photo{max-width:420px}
   .hero-copy{display:flex;flex-direction:column}
   .hero-copy .h-frase{order:1}
@@ -192,12 +193,12 @@ footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-w
   .hero-copy .speaker{display:none}
   .hero-copy .h-date,.hero-copy .h-when,.hero-copy .h-where{order:3}
   .hero-copy .cta{order:4}
-  .chapters{background:rgba(255,255,255,.06);border-radius:10px;padding:6px 8px;flex-wrap:nowrap;gap:6px;flex-shrink:0}
-  .chapter-logo{padding-left:5px}
-  .chapter-logo img{height:clamp(16px,5vw,26px)}
-  .host{padding:7px 9px;gap:7px;flex-shrink:0}
-  .host-logo{height:clamp(26px,8vw,38px)}
-  .host small{padding-left:7px;font-size:clamp(.46rem,1.7vw,.62rem);letter-spacing:.16em}
+  .chapters{background:rgba(255,255,255,.06);border-radius:10px;padding:8px 10px;flex-wrap:nowrap;gap:8px;flex-shrink:0}
+  .chapter-logo{padding-left:6px}
+  .chapter-logo img{height:clamp(20px,7vw,32px)}
+  .host{padding:9px 12px;gap:9px;flex-shrink:0}
+  .host-logo{height:clamp(32px,11vw,46px)}
+  .host small{padding-left:9px;font-size:clamp(.5rem,2vw,.68rem);letter-spacing:.16em}
   .bio-grid{grid-template-columns:1fr}
   .bio-photo{max-width:420px}
   .quem-grid,.lote-grid{grid-template-columns:1fr}
@@ -207,7 +208,7 @@ footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-w
   .chain-step:nth-child(2){border-left:1px solid var(--line);border-top:none}
   .nums{flex-direction:column}
   .num + .num{border-left:none;border-top:1px solid var(--line)}
-  .top{justify-content:center;text-align:center;flex-wrap:nowrap;gap:8px}
+  .top{justify-content:space-between;text-align:center;flex-wrap:nowrap;gap:10px}
   .chapters{justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
