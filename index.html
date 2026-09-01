@@ -63,7 +63,7 @@ header{padding:56px 0 26px}
 .chapters span i{display:block;font-style:normal;font-weight:300;font-size:.65rem;color:var(--grey);letter-spacing:.3em}
 .host-logo{height:50px;width:auto;display:block}
 .chapter-logo{border-left:2px solid var(--red);padding-left:10px;display:flex;align-items:center}
-.chapter-logo img{height:22px;width:auto;display:block;background:#fff;border-radius:6px;padding:4px 8px}
+.chapter-logo img{height:34px;width:auto;display:block;background:#fff;border-radius:6px;padding:6px 10px}
 
 /* ---------- hero ---------- */
 section.wrap.hero{padding-top:clamp(5rem,10vw,9rem);padding-bottom:clamp(4rem,8vw,7rem);display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
@@ -141,6 +141,7 @@ h2{font-weight:900;font-stretch:82%;font-size:clamp(1.9rem,4.5vw,3rem);line-heig
 .lote .price{font-weight:900;font-size:clamp(2.1rem,4.5vw,2.9rem);line-height:1}
 .lote .price sup{font-size:.4em;font-weight:700;vertical-align:.9em;margin-right:.15em}
 .lote .price.tbd{color:var(--grey);font-weight:800;font-size:1.35rem;margin-top:.6rem}
+.lote .note{font-family:var(--condensed);font-weight:400;font-size:.74rem;letter-spacing:.04em;color:var(--grey)}
 .lote .until{font-family:var(--condensed);font-weight:300;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--grey)}
 .lote .status{margin-top:auto;padding-top:22px}
 .lote .buy{display:block;text-align:center;background:var(--red);color:var(--white);font-family:var(--condensed);font-weight:500;font-size:.85rem;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;padding:15px 10px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease}
@@ -209,9 +210,9 @@ footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-w
       <small>Apresenta</small>
     </div>
     <div class="chapters">
-      <span>BNI<i>Barbera</i></span>
+      <span class="chapter-logo"><img src="assets/imagens/bni-barbera.png" alt="BNI Barbera"></span>
       <span class="chapter-logo"><img src="assets/imagens/bni-nebbiolo.png" alt="BNI Nebbiolo"></span>
-      <span>BNI<i>Cabernet</i></span>
+      <span class="chapter-logo"><img src="assets/imagens/bni-cabernet.png" alt="BNI Cabernet"></span>
     </div>
   </div>
 </header>
@@ -320,22 +321,23 @@ footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-w
     <h2>Ingressos</h2>
 
     <div class="lote-grid">
-      <div class="lote" data-inicio="2026-01-01" data-fim="2026-08-28">
+      <div class="lote" data-inicio="2026-01-01" data-fim="2026-09-07">
         <span class="n">1º lote</span>
         <span class="price"><sup>R$</sup>97</span>
-        <span class="until">até 28/08</span>
-        <span class="status"></span>
-      </div>
-      <div class="lote" data-inicio="2026-08-29" data-fim="2026-09-07">
-        <span class="n">2º lote</span>
-        <span class="price"><sup>R$</sup>119</span>
         <span class="until">até 07/09</span>
         <span class="status"></span>
       </div>
-      <div class="lote" data-inicio="2026-09-08" data-fim="2026-09-23">
+      <div class="lote" data-inicio="2026-09-08" data-fim="2026-09-16">
+        <span class="n">2º lote</span>
+        <span class="price"><sup>R$</sup>119</span>
+        <span class="until">de 08/09 até 16/09</span>
+        <span class="status"></span>
+      </div>
+      <div class="lote" data-inicio="2026-09-17" data-fim="2026-09-24">
         <span class="n">3º lote</span>
-        <span class="price tbd">Sujeito a disponibilidade</span>
-        <span class="until">de 08/09 a 23/09</span>
+        <span class="price"><sup>R$</sup>147</span>
+        <span class="note">Se tiver disponibilidade</span>
+        <span class="until">de 17/09 até 24/09</span>
         <span class="status"></span>
       </div>
     </div>
@@ -362,7 +364,7 @@ footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-w
       </details>
       <details>
         <summary>Como funcionam os lotes?</summary>
-        <p>O 1º lote (R$ 97) vai até 28/08. O 2º lote (R$ 119) vai até 07/09. De 08/09 a 23/09, o 3º lote abre apenas se ainda houver disponibilidade de lugares.</p>
+        <p>O 1º lote (R$ 97) vai até 07/09. O 2º lote (R$ 119) vai de 08/09 até 16/09. De 17/09 a 24/09, o 3º lote (R$ 147) abre apenas se ainda houver disponibilidade de lugares.</p>
       </details>
       <details>
         <summary>Como garanto meu ingresso?</summary>
