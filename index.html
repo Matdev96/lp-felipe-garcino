@@ -1,11 +1,425 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=conexoes-lucrativas.html">
-  <title>Redirecionando...</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conexões Lucrativas — Felipe Garcino · 24/09 · Unimax</title>
+<meta name="description" content="Uma noite para empresários que querem transformar relacionamento em negócio. Palestra Conexões Lucrativas com Felipe Garcino. 24/09, 19h, Auditório Unimax — Indaiatuba/SP.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://matdev96.github.io/lp-felipe-garcino/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Conexões Lucrativas">
+<meta property="og:title" content="Conexões Lucrativas — Felipe Garcino · 24/09 · Unimax">
+<meta property="og:description" content="Uma noite para empresários que querem transformar relacionamento em negócio. Palestra Conexões Lucrativas com Felipe Garcino. 24/09, 19h, Auditório Unimax — Indaiatuba/SP.">
+<meta property="og:image" content="https://matdev96.github.io/lp-felipe-garcino/assets/imagens/felipe-garcino-hero.jpg">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="1222">
+<meta property="og:image:alt" content="Felipe Garcino, palestrante de Conexões Lucrativas">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conexões Lucrativas — Felipe Garcino · 24/09 · Unimax">
+<meta name="twitter:description" content="Uma noite para empresários que querem transformar relacionamento em negócio. Palestra Conexões Lucrativas com Felipe Garcino. 24/09, 19h, Auditório Unimax — Indaiatuba/SP.">
+<meta name="twitter:image" content="https://matdev96.github.io/lp-felipe-garcino/assets/imagens/felipe-garcino-hero.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..900&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0a0507;
+  --black-2:#150b0e;
+  --red:#c8102e;
+  --red-dark:#8f0b20;
+  --white:#ffffff;
+  --grey:#b9adb1;
+  --line:rgba(255,255,255,.12);
+  --display:'Archivo',sans-serif;
+  --condensed:'Oswald',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:var(--display);overflow-x:hidden}
+::selection{background:var(--red);color:var(--white)}
+img{max-width:100%;display:block}
+
+.glow{
+  position:fixed;inset:0;z-index:-1;
+  background:
+    radial-gradient(60% 45% at 78% 8%, rgba(200,16,46,.30), transparent 70%),
+    radial-gradient(50% 40% at 10% 90%, rgba(200,16,46,.16), transparent 70%),
+    var(--black);
+}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding-left:clamp(1rem,5vw,5rem);padding-right:clamp(1rem,5vw,5rem)}
+
+/* ---------- topo ---------- */
+header{padding:56px 0 26px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.host{background:var(--red);padding:13px 18px;border-radius:10px;display:flex;align-items:center;gap:14px}
+.host b{font-family:var(--condensed);font-weight:500;font-size:1rem;letter-spacing:.06em;line-height:1.15;text-transform:uppercase}
+.host small{border-left:1px solid rgba(255,255,255,.45);padding-left:14px;font-family:var(--condensed);font-weight:300;font-size:.76rem;letter-spacing:.35em;text-transform:uppercase}
+.chapters{display:flex;gap:20px;flex-wrap:wrap}
+.chapters span{font-family:var(--condensed);font-weight:500;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;border-left:2px solid var(--red);padding-left:10px;line-height:1.4}
+.chapters span i{display:block;font-style:normal;font-weight:300;font-size:.65rem;color:var(--grey);letter-spacing:.3em}
+.host-logo{height:50px;width:auto;display:block}
+.chapter-logo{border-left:2px solid var(--red);padding-left:10px;display:flex;align-items:center}
+.chapter-logo img{height:22px;width:auto;display:block;background:#fff;border-radius:6px;padding:4px 8px}
+
+/* ---------- hero ---------- */
+section.wrap.hero{padding-top:clamp(5rem,10vw,9rem);padding-bottom:clamp(4rem,8vw,7rem);display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.h-date{font-weight:900;font-size:clamp(2.6rem,6vw,4.2rem);line-height:1;letter-spacing:.02em}
+.h-when{margin-top:8px;font-family:var(--condensed);font-weight:300;font-size:clamp(.9rem,2vw,1.15rem);letter-spacing:.42em;text-transform:uppercase}
+.h-where{margin-top:5px;font-family:var(--condensed);font-weight:500;font-size:.85rem;letter-spacing:.32em;text-transform:uppercase;color:var(--grey)}
+.speaker{display:inline-flex;align-items:center;gap:12px;margin-top:34px;background:var(--red);border-radius:12px;padding:11px 22px;font-family:var(--condensed);text-transform:uppercase}
+.speaker em{font-style:normal;font-weight:300;font-size:.78rem;letter-spacing:.3em}
+.speaker .dot{width:7px;height:7px;border-radius:50%;background:var(--white);opacity:.85}
+.speaker strong{font-weight:500;font-size:.92rem;letter-spacing:.22em}
+.title{margin-top:22px;font-weight:900;font-stretch:78%;font-size:clamp(3rem,8.5vw,6.4rem);line-height:.92;text-transform:uppercase}
+.title .pill{display:inline-block;background:var(--red);border-radius:12px;padding:.04em .22em .07em;font-size:.42em;font-weight:800;font-stretch:88%;vertical-align:.32em;box-shadow:0 12px 40px rgba(200,16,46,.45)}
+.h-frase{margin-top:26px;max-width:34em;font-weight:400;font-size:1.05rem;line-height:1.65;color:var(--grey)}
+.h-frase b{color:var(--white);font-weight:700}
+
+.cta{display:inline-block;background:var(--white);color:var(--black);font-family:var(--condensed);font-weight:500;font-size:.95rem;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;padding:18px 42px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease}
+.cta:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(200,16,46,.5)}
+.cta:focus-visible{outline:3px solid var(--red);outline-offset:4px}
+.hero .cta{margin-top:36px}
+
+.photo{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.photo img{width:100%;height:auto;filter:saturate(.92)}
+.photo::after{content:'';position:absolute;inset:0;background:linear-gradient(200deg,rgba(200,16,46,.22),transparent 45%,rgba(10,5,7,.55) 100%)}
+.photo .tag{position:absolute;left:18px;bottom:18px;z-index:2;background:rgba(10,5,7,.75);backdrop-filter:blur(4px);border:1px solid var(--line);border-radius:10px;padding:10px 16px;font-family:var(--condensed);font-weight:400;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;line-height:1.7}
+.photo .tag b{font-weight:500;font-size:.85rem;display:block;letter-spacing:.18em}
+
+/* ---------- seções ---------- */
+section.wrap{padding-top:clamp(4rem,8vw,6.5rem);padding-bottom:clamp(4rem,8vw,6.5rem)}
+.eyebrow{font-family:var(--condensed);font-weight:300;font-size:.82rem;letter-spacing:.5em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.eyebrow.center{text-align:center}
+h2{font-weight:900;font-stretch:82%;font-size:clamp(1.9rem,4.5vw,3rem);line-height:1.05;text-transform:uppercase;max-width:16em}
+.lead{margin-top:20px;max-width:36em;font-size:1.05rem;line-height:1.7;color:var(--grey)}
+.lead b{color:var(--white)}
+
+/* para quem é */
+.quem{border-top:1px solid var(--line)}
+.quem-grid{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.quem-card{border:1px solid var(--line);border-radius:16px;padding:clamp(1.5rem,3vw,2.5rem);background:rgba(255,255,255,.02)}
+.quem-card p{font-size:1rem;line-height:1.65;color:var(--grey)}
+.quem-card p b{color:var(--white)}
+.quem-card .mark{width:34px;height:4px;background:var(--red);border-radius:2px;margin-bottom:18px}
+
+/* ganhos — a sequência do Felipe */
+.ganhos{border-top:1px solid var(--line)}
+.chain{margin-top:48px;display:flex;align-items:stretch;gap:0;flex-wrap:wrap}
+.chain-step{flex:1;min-width:200px;padding:clamp(1.5rem,3vw,2.5rem);border:1px solid var(--line);background:rgba(255,255,255,.02)}
+.chain-step:first-child{border-radius:16px 0 0 16px}
+.chain-step:last-child{border-radius:0 16px 16px 0;border-left:none;background:linear-gradient(160deg,rgba(200,16,46,.25),rgba(200,16,46,.06));border-color:var(--red)}
+.chain-step:nth-child(2){border-left:none}
+.chain-step h3{font-family:var(--condensed);font-weight:500;font-size:1.05rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px}
+.chain-step p{font-size:.92rem;line-height:1.6;color:var(--grey)}
+.chain-step .arrow{font-family:var(--condensed);font-weight:300;color:var(--red);font-size:1.4rem;line-height:1;margin-bottom:14px}
+.tecnica{margin-top:34px;font-weight:800;font-stretch:85%;font-size:clamp(1.3rem,3vw,1.9rem);text-transform:uppercase;line-height:1.25}
+.tecnica span{color:var(--red)}
+
+/* bio */
+.bio{border-top:1px solid var(--line)}
+.bio-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}
+.bio-photo{border-radius:20px;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.bio-photo img{width:100%;filter:saturate(.92)}
+.bio-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(20deg,rgba(200,16,46,.2),transparent 50%)}
+.bio-text .lead{margin-top:16px}
+.nums{margin-top:36px;display:flex;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.num{flex:1;padding:22px 20px;text-align:center}
+.num + .num{border-left:1px solid var(--line)}
+.num b{display:block;font-weight:900;font-size:clamp(1.6rem,3.5vw,2.3rem);line-height:1}
+.num small{display:block;margin-top:8px;font-family:var(--condensed);font-weight:300;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--grey)}
+
+/* lotes */
+.lotes{border-top:1px solid var(--line)}
+.lotes h2{margin:0 auto;text-align:center}
+.lote-grid{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.lote{border:1px solid var(--line);border-radius:16px;padding:clamp(1.5rem,3vw,2.5rem);background:rgba(255,255,255,.02);display:flex;flex-direction:column;gap:8px;position:relative}
+.lote .n{font-family:var(--condensed);font-weight:500;font-size:.76rem;letter-spacing:.35em;text-transform:uppercase;color:var(--grey)}
+.lote .price{font-weight:900;font-size:clamp(2.1rem,4.5vw,2.9rem);line-height:1}
+.lote .price sup{font-size:.4em;font-weight:700;vertical-align:.9em;margin-right:.15em}
+.lote .price.tbd{color:var(--grey);font-weight:800;font-size:1.35rem;margin-top:.6rem}
+.lote .until{font-family:var(--condensed);font-weight:300;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--grey)}
+.lote .status{margin-top:auto;padding-top:22px}
+.lote .buy{display:block;text-align:center;background:var(--red);color:var(--white);font-family:var(--condensed);font-weight:500;font-size:.85rem;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;padding:15px 10px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease}
+.lote .buy:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(200,16,46,.55)}
+.lote .buy:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+.lote .closed,.lote .soon{display:block;text-align:center;font-family:var(--condensed);font-weight:400;font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--grey);border:1px dashed var(--line);border-radius:999px;padding:15px 10px}
+.lote.ativo{border-color:var(--red);background:linear-gradient(160deg,rgba(200,16,46,.22),rgba(200,16,46,.05))}
+.lote.ativo::before{content:'À venda';position:absolute;top:-12px;left:24px;background:var(--red);border-radius:999px;padding:5px 14px;font-family:var(--condensed);font-weight:500;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase}
+.lote-obs{margin-top:22px;text-align:center;font-family:var(--condensed);font-weight:300;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--grey)}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+.faq-list{margin-top:40px;max-width:760px}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 4px;font-family:var(--condensed);font-weight:400;font-size:1.02rem;letter-spacing:.08em;text-transform:uppercase}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:'+';font-weight:300;font-size:1.5rem;color:var(--red);transition:transform .2s ease}
+.faq-list details[open] summary::after{transform:rotate(45deg)}
+.faq-list details p{padding:0 4px 26px;max-width:38em;line-height:1.7;color:var(--grey);font-size:.98rem}
+
+/* fechamento */
+.final{border-top:1px solid var(--line);text-align:center}
+.final h2{margin:0 auto}
+.final .lead{margin-left:auto;margin-right:auto}
+.final .cta{margin-top:40px}
+
+/* whatsapp flutuante */
+.whats-fab{position:fixed;right:22px;bottom:22px;z-index:50;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.45);transition:transform .2s ease,box-shadow .2s ease}
+.whats-fab:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 16px 38px rgba(0,0,0,.55)}
+.whats-fab:focus-visible{outline:3px solid var(--white);outline-offset:4px}
+.whats-fab svg{width:30px;height:30px;fill:#fff}
+.whats-fab::before{content:'';position:absolute;inset:0;border-radius:50%;background:#25D366;opacity:.55;animation:whats-pulse 2.2s ease-out infinite;z-index:-1}
+@keyframes whats-pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.7);opacity:0}}
+@media (max-width:640px){.whats-fab{right:16px;bottom:16px;width:54px;height:54px}.whats-fab svg{width:27px;height:27px}}
+.local{margin-top:56px;display:flex;justify-content:center;gap:40px;flex-wrap:wrap;align-items:center}
+.local .brand{font-weight:900;font-size:1.7rem}
+.local .brand small{display:block;font-family:var(--condensed);font-weight:300;font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--grey);margin-top:4px}
+.local address{font-style:normal;font-family:var(--condensed);font-weight:400;font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;line-height:1.9;text-align:left;border-left:2px solid var(--red);padding-left:20px}
+footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-weight:300;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--grey)}
+
+@media (max-width:860px){
+  section.wrap.hero{grid-template-columns:1fr;padding-top:clamp(1.5rem,5vw,5rem)}
+  .photo{order:-1;max-width:420px}
+  .bio-grid{grid-template-columns:1fr}
+  .bio-photo{max-width:420px}
+  .quem-grid,.lote-grid{grid-template-columns:1fr}
+  .chain{flex-direction:column}
+  .chain-step:first-child{border-radius:16px 16px 0 0}
+  .chain-step:last-child{border-radius:0 0 16px 16px;border-left:1px solid var(--red);border-top:none}
+  .chain-step:nth-child(2){border-left:1px solid var(--line);border-top:none}
+  .nums{flex-direction:column}
+  .num + .num{border-left:none;border-top:1px solid var(--line)}
+  .top{justify-content:center;text-align:center}
+  .chapters{justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
 </head>
 <body>
-  <p>Redirecionando para a página... Se não for redirecionado automaticamente, <a href="conexoes-lucrativas.html">clique aqui</a>.</p>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="wrap">
+  <div class="top">
+    <div class="host">
+      <img class="host-logo" src="assets/imagens/bni-planalto-paulista.png" alt="BNI Planalto Paulista">
+      <small>Apresenta</small>
+    </div>
+    <div class="chapters">
+      <span>BNI<i>Barbera</i></span>
+      <span class="chapter-logo"><img src="assets/imagens/bni-nebbiolo.png" alt="BNI Nebbiolo"></span>
+      <span>BNI<i>Cabernet</i></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div>
+      <h1 class="h-date">24/09</h1>
+      <p class="h-when">Quinta-feira · 19h</p>
+      <p class="h-where">Auditório Unimax — Indaiatuba · SP</p>
+
+      <div class="speaker">
+        <em>Palestrante</em>
+        <span class="dot" aria-hidden="true"></span>
+        <strong>Felipe Garcino</strong>
+      </div>
+
+      <p class="title">
+        CONEXÕES<br>
+        <span class="pill">Lucrativas</span>
+      </p>
+
+      <p class="h-frase">Talvez o que você precise para conseguir mais oportunidades de negócio não seja conhecer mais pessoas — <b>mas ser lembrado pelas pessoas certas.</b></p>
+
+      <a class="cta" href="#lotes">Quero estar nessa noite</a>
+    </div>
+
+    <div class="photo">
+      <img src="assets/imagens/felipe-garcino-hero.jpg" alt="Felipe Garcino, palestrante de Conexões Lucrativas" width="1000" height="1222" loading="eager">
+      <div class="tag">Mentor e treinador de comunicação<b>Felipe Garcino</b></div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM É -->
+  <section class="quem wrap" id="para-quem">
+    <p class="eyebrow">Este convite é para você que</p>
+    <h2>Conhece muita gente — e ainda assim perde negócio</h2>
+    <p class="lead">Networking não é sobre quantas pessoas conhecem o seu nome. É sobre <b>o que acontece na cabeça delas</b> quando alguém precisa exatamente daquilo que você faz.</p>
+
+    <div class="quem-grid">
+      <div class="quem-card">
+        <div class="mark" aria-hidden="true"></div>
+        <p>Participa de <b>reuniões, eventos e cafés</b>, troca contato, conversa com todo mundo — mas quando surge uma oportunidade, ninguém lembra de você.</p>
+      </div>
+      <div class="quem-card">
+        <div class="mark" aria-hidden="true"></div>
+        <p>Sai de boas conversas que <b>terminam em troca de cartões</b> — e não em confiança, indicação e negócio.</p>
+      </div>
+      <div class="quem-card">
+        <div class="mark" aria-hidden="true"></div>
+        <p>Acredita que os seus <b>próximos grandes negócios</b> podem estar a uma conexão certa de distância.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GANHOS -->
+  <section class="ganhos wrap" id="ganhos">
+    <p class="eyebrow">O que você leva dessa noite</p>
+    <h2>O caminho que separa contato de contrato</h2>
+    <p class="lead">O problema quase nunca é fazer <b>mais</b> networking. É saber transformar cada etapa da relação:</p>
+
+    <div class="chain">
+      <div class="chain-step">
+        <div class="arrow" aria-hidden="true">01</div>
+        <h3>Relacionamento → Conexão</h3>
+        <p>Como sair da conversa agradável e criar um vínculo que tem contexto e propósito.</p>
+      </div>
+      <div class="chain-step">
+        <div class="arrow" aria-hidden="true">02</div>
+        <h3>Conexão → Reconhecimento</h3>
+        <p>Como se posicionar para ser a primeira pessoa lembrada na sua especialidade.</p>
+      </div>
+      <div class="chain-step">
+        <div class="arrow" aria-hidden="true">03</div>
+        <h3>Reconhecimento → Negócio</h3>
+        <p>Como esse reconhecimento vira confiança, indicação e fechamento.</p>
+      </div>
+    </div>
+
+    <p class="tecnica">Comunicação é a base de tudo. E o melhor: comunicação não é dom — <span>é técnica.</span></p>
+  </section>
+
+  <!-- QUEM É O FELIPE -->
+  <section class="bio wrap" id="felipe">
+    <div class="bio-grid">
+      <div class="bio-photo">
+        <img src="assets/imagens/felipe-garcino-bio.jpg" alt="Felipe Garcino" width="1000" height="1222" loading="lazy">
+      </div>
+      <div class="bio-text">
+        <p class="eyebrow">Quem conduz a noite</p>
+        <h2>Felipe Garcino</h2>
+        <p class="lead">Mentor e treinador de <b>Comunicação para Empresários e Líderes</b>. Ao lado de Lucrecia Santana — esposa e sócia —, comanda o <b>Instituto Todo Saber</b>. Pai da Vivian e do João Vitor.</p>
+        <div class="nums">
+          <div class="num"><b>105</b><small>Eventos de imersão</small></div>
+          <div class="num"><b>+920</b><small>Palestras realizadas</small></div>
+          <div class="num"><b>+20 mil</b><small>Pessoas impactadas</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOTES -->
+  <section class="lotes wrap" id="lotes">
+    <p class="eyebrow center">Garanta seu lugar</p>
+    <h2>Ingressos</h2>
+
+    <div class="lote-grid">
+      <div class="lote" data-inicio="2026-01-01" data-fim="2026-08-28">
+        <span class="n">1º lote</span>
+        <span class="price"><sup>R$</sup>97</span>
+        <span class="until">até 28/08</span>
+        <span class="status"></span>
+      </div>
+      <div class="lote" data-inicio="2026-08-29" data-fim="2026-09-07">
+        <span class="n">2º lote</span>
+        <span class="price"><sup>R$</sup>119</span>
+        <span class="until">até 07/09</span>
+        <span class="status"></span>
+      </div>
+      <div class="lote" data-inicio="2026-09-08" data-fim="2026-09-23">
+        <span class="n">3º lote</span>
+        <span class="price tbd">Sujeito a disponibilidade</span>
+        <span class="until">de 08/09 a 23/09</span>
+        <span class="status"></span>
+      </div>
+    </div>
+    <p class="lote-obs">Vagas limitadas à capacidade do auditório</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq wrap" id="faq">
+    <p class="eyebrow">Perguntas frequentes</p>
+    <h2>Antes de você chegar</h2>
+
+    <div class="faq-list">
+      <details>
+        <summary>Quando e onde acontece?</summary>
+        <p>Quinta-feira, 24 de setembro, às 19h, no Auditório do Campus da Unimax (Centro Universitário Max Planck) — Av. Nove de Dezembro, 460, Indaiatuba/SP.</p>
+      </details>
+      <details>
+        <summary>Preciso ser membro do BNI para participar?</summary>
+        <p>Não. A noite é promovida pelos grupos BNI Planalto Paulista, Barbera, Nebbiolo e Cabernet, mas o convite é aberto a empresários e líderes que queiram transformar relacionamento em negócio.</p>
+      </details>
+      <details>
+        <summary>Para quem é a palestra?</summary>
+        <p>Para empresários que querem construir relações que não terminam em uma troca de cartões ou em uma conversa agradável — mas que geram confiança, indicação e negócios.</p>
+      </details>
+      <details>
+        <summary>Como funcionam os lotes?</summary>
+        <p>O 1º lote (R$ 97) vai até 28/08. O 2º lote (R$ 119) vai até 07/09. De 08/09 a 23/09, o 3º lote abre apenas se ainda houver disponibilidade de lugares.</p>
+      </details>
+      <details>
+        <summary>Como garanto meu ingresso?</summary>
+        <p>Pelo botão do lote vigente, aqui mesmo na página. Assim que um lote encerra, o próximo é liberado automaticamente.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FECHAMENTO -->
+  <section class="final wrap">
+    <h2>Essa noite é pra você</h2>
+    <p class="lead">Se você é empresário e acredita que os seus próximos grandes negócios podem estar a <b>uma conexão certa de distância</b> — nos vemos dia 24.</p>
+    <a class="cta" href="#lotes">Garantir meu ingresso</a>
+
+    <div class="local">
+      <div class="brand">Unimax<small>Centro Universitário Max Planck</small></div>
+      <address><b>Auditório do Campus</b><br>Av. Nove de Dezembro, 460</address>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  BNI Planalto Paulista · Barbera · Nebbiolo · Cabernet
+</footer>
+
+<a class="whats-fab" href="https://api.whatsapp.com/send?phone=5519999922155&amp;text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20Conex%C3%B5es%20Lucrativas%20do%20dia%2024/09" target="_blank" rel="noopener" aria-label="Falar no WhatsApp sobre a palestra Conexões Lucrativas">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.36 4 14.95c0 2.35.62 4.56 1.79 6.52L3 29l7.72-2.02a12.9 12.9 0 0 0 5.3 1.13h.01c6.62 0 12.02-5.36 12.02-11.95C28.05 8.36 22.65 3 16.02 3zm7.03 17.06c-.3.83-1.72 1.6-2.38 1.7-.61.1-1.38.14-2.23-.14-.51-.16-1.17-.38-2.02-.75-3.55-1.53-5.87-5.1-6.05-5.34-.18-.24-1.45-1.93-1.45-3.68 0-1.75.92-2.6 1.25-2.96.32-.35.7-.44.93-.44.23 0 .47 0 .68.01.22.01.51-.08.8.61.3.71 1 2.46 1.09 2.64.09.18.15.4.03.64-.12.24-.18.4-.36.61-.18.21-.38.47-.54.63-.18.18-.37.37-.16.73.21.35.93 1.53 2 2.48 1.37 1.22 2.53 1.6 2.88 1.78.35.18.56.15.76-.09.21-.24.88-1.02 1.11-1.37.24-.35.47-.29.79-.18.32.12 2.06.97 2.41 1.15.35.18.59.26.68.41.09.15.09.85-.21 1.68z"/></svg>
+</a>
+
+<script>
+/* =====================================================
+   LINK DE COMPRA — troque aqui quando definirem o destino
+   (WhatsApp ou página de pagamento). Pode ser um link
+   único ou um por lote, no atributo data-link de cada .lote
+   ===================================================== */
+const LINK_INGRESSO = 'https://forms.gle/9eSiTAfDEU4diPT26'; // Inscrição Conexões Lucrativas - Convidado
+
+(function(){
+  const hoje = new Date();
+  hoje.setHours(0,0,0,0);
+
+  document.querySelectorAll('.lote').forEach(lote=>{
+    const ini = new Date(lote.dataset.inicio + 'T00:00:00');
+    const fim = new Date(lote.dataset.fim + 'T23:59:59');
+    const status = lote.querySelector('.status');
+    const link = lote.dataset.link || LINK_INGRESSO;
+
+    if(hoje > fim){
+      status.innerHTML = '<span class="closed">Encerrado</span>';
+    } else if(hoje >= ini){
+      lote.classList.add('ativo');
+      status.innerHTML = '<a class="buy" href="'+link+'">Comprar ingresso</a>';
+    } else {
+      status.innerHTML = '<span class="soon">Em breve</span>';
+    }
+  });
+})();
+</script>
 </body>
 </html>
