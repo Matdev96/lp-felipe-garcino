@@ -135,8 +135,8 @@ h2{font-weight:900;font-stretch:82%;font-size:clamp(1.9rem,4.5vw,3rem);line-heig
 /* lotes */
 .lotes{border-top:1px solid var(--line)}
 .lotes h2{margin:0 auto;text-align:center}
-.lote-grid{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.lote{border:1px solid var(--line);border-radius:16px;padding:clamp(1.5rem,3vw,2.5rem);background:rgba(255,255,255,.02);display:flex;flex-direction:column;gap:8px;position:relative}
+.lote-grid{margin-top:48px;display:flex;justify-content:center;gap:18px}
+.lote{border:1px solid var(--line);border-radius:16px;padding:clamp(1.5rem,3vw,2.5rem);background:rgba(255,255,255,.02);display:flex;flex-direction:column;gap:8px;position:relative;max-width:400px;width:100%}
 .lote .n{font-family:var(--condensed);font-weight:500;font-size:.76rem;letter-spacing:.35em;text-transform:uppercase;color:var(--grey)}
 .lote .price{font-weight:900;font-size:clamp(2.1rem,4.5vw,2.9rem);line-height:1}
 .lote .price sup{font-size:.4em;font-weight:700;vertical-align:.9em;margin-right:.15em}
@@ -215,7 +215,7 @@ footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-w
   .host small{padding-left:9px;font-size:clamp(.5rem,2vw,.68rem);letter-spacing:.16em}
   .bio-grid{grid-template-columns:1fr}
   .bio-photo{max-width:420px}
-  .quem-grid,.lote-grid{grid-template-columns:1fr}
+  .quem-grid{grid-template-columns:1fr}
   .chain{flex-direction:column}
   .chain-step:first-child{border-radius:16px 16px 0 0}
   .chain-step:last-child{border-radius:0 0 16px 16px;border-left:1px solid var(--red);border-top:none}
@@ -349,23 +349,8 @@ footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-w
     <h2>Ingressos</h2>
 
     <div class="lote-grid">
-      <div class="lote" data-inicio="2026-01-01" data-fim="2026-09-15">
-        <span class="n">1º lote</span>
+      <div class="lote" data-inicio="2026-01-01" data-fim="2026-09-24">
         <span class="price"><sup>R$</sup>97</span>
-        <span class="until">até 15/09</span>
-        <span class="status"></span>
-      </div>
-      <div class="lote" data-inicio="2026-09-16" data-fim="2026-09-20">
-        <span class="n">2º lote</span>
-        <span class="price"><sup>R$</sup>119</span>
-        <span class="until">de 16/09 até 20/09</span>
-        <span class="status"></span>
-      </div>
-      <div class="lote" data-inicio="2026-09-21" data-fim="2026-09-24">
-        <span class="n">3º lote</span>
-        <span class="price"><sup>R$</sup>147</span>
-        <span class="note">Se tiver disponibilidade</span>
-        <span class="until">de 21/09 até 24/09</span>
         <span class="status"></span>
       </div>
     </div>
@@ -414,12 +399,12 @@ footer{padding:26px 0 56px;text-align:center;font-family:var(--condensed);font-w
         <p>Para empresários que querem construir relações que não terminam em uma troca de cartões ou em uma conversa agradável — mas que geram confiança, indicação e negócios.</p>
       </details>
       <details>
-        <summary>Como funcionam os lotes?</summary>
-        <p>O 1º lote (R$ 97) vai até 15/09. O 2º lote (R$ 119) vai de 16/09 até 20/09. De 21/09 a 24/09, o 3º lote (R$ 147) abre apenas se ainda houver disponibilidade de lugares.</p>
+        <summary>Quanto custa o ingresso?</summary>
+        <p>R$ 97, valor único — sem lotes progressivos.</p>
       </details>
       <details>
         <summary>Como garanto meu ingresso?</summary>
-        <p>Pelo botão do lote vigente, aqui mesmo na página. Assim que um lote encerra, o próximo é liberado automaticamente.</p>
+        <p>Pelo botão de compra, aqui mesmo na página.</p>
       </details>
     </div>
   </section>
